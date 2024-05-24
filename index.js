@@ -14,7 +14,7 @@ client.on('qr', qr => {
 
 client.on('ready', async () => {
     console.log('Client is ready!');
-    // Mendapatkan ID grup
+    // Mendapatkan ID group
     const chats = await client.getChats();
     const groupChats = chats.filter(chat => chat.isGroup);
 
